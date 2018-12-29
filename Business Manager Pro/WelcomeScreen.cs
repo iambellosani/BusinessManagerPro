@@ -39,16 +39,15 @@ namespace Business_Manager_Pro
             {
                 timer1.Enabled = false;
                 Close();
-                MyNewThread = new Thread(ShowMainInterface);
+                MyNewThread = new Thread(ShowAccessControl);
                 MyNewThread.SetApartmentState(ApartmentState.STA);
                 MyNewThread.Start();
-                return;
             }
         }
 
-        private void ShowMainInterface(object obj)
+        private void ShowAccessControl(object obj)
         {
-            Application.Run(new MainInterface());
+            Application.Run(new AccessControl());
         }
     }
 }

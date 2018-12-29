@@ -21,5 +21,16 @@ namespace Business_Manager_Pro
         {
             
         }
+
+        private void bnclose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void bninfo_Click(object sender, EventArgs e)
+        {
+            AboutBusinessManager infoform = new AboutBusinessManager();
+            infoform.ShowDialog();
+        }
     }
 }
